@@ -1,0 +1,87 @@
+@use "../abstracts" as abs;
+
+//FONT FAMILY
+.ff-montserrat{
+  font-family: abs.$ff-montserrat;
+}
+
+.ff-sf-ui-display{
+  font-family: abs.$ff-sf-ui-display;
+}
+
+
+
+//FONT WEIGHT
+.fw-light{
+  @include abs.font-weight(light);
+}
+
+.fw-semi-bold{
+  @include abs.font-weight(semibold);
+}
+
+.fw-bold{
+  @include abs.font-weight(bold);
+}
+
+//FONT SIZE
+@include abs.font-size();
+
+
+
+// Margins
+@include abs.generate-margin-padding('.m-t-', 'margin-top');
+@include abs.generate-margin-padding('.m-r-', 'margin-right');
+@include abs.generate-margin-padding('.m-b-', 'margin-bottom');
+@include abs.generate-margin-padding('.m-l-', 'margin-left');
+@include abs.generate-margin-padding('.m-x-', 'margin');
+// Paddings
+@include abs.generate-margin-padding('.p-t-', 'padding-top');
+@include abs.generate-margin-padding('.p-r-', 'padding-right');
+@include abs.generate-margin-padding('.p-b-', 'padding-bottom');
+@include abs.generate-margin-padding('.p-l-', 'padding-left');
+@include abs.generate-margin-padding('.p-x-', 'padding');
+
+
+//BACKGROUND
+.bg-light-blue{
+  background: abs.$clr-light-blue;
+}
+
+.bg-10-15{
+  background: abs.$clr-10-15;
+}
+
+.bg-16-20{
+  background: abs.$clr-16-20;
+}
+
+.bg-21-26{
+  background: abs.$clr-21-26;
+}
+
+.bg-27-31{
+  background: abs.$clr-27-31;
+}
+
+.bg-32-37{
+  background: abs.$clr-32-37;
+}
+
+.bg-38{
+  background: abs.$clr-38;
+}
+
+
+
+
+//BORDER RADIUS
+.br-10{
+  @include abs.border-radius(10px)
+}
+
+//TEXT ALIGN
+
+.text-align-start{
+  @include abs.text-align(start);
+}
